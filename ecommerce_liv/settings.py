@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Broadways.urls'
+ROOT_URLCONF = 'ecommerce_liv.urls'
 
 TEMPLATES = [
     {
