@@ -1,13 +1,16 @@
 import view as view
-from django.shortcuts import render,redirect,get_object_or_404
-from home.models import Items
+from django.shortcuts import render, redirect, get_object_or_404
+from apps.models import Items
+
 
 # Create your views here.
 
 class BaseView(view):
     template_context = {
-        'items' : Items.objects.all()
+        'items': Items.objects.all()
     }
+
+
 class HomeView(BaseView):
     def __get__(self, request):
         self.template_context['items'] = Items.objects.all()

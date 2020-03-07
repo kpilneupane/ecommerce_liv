@@ -15,4 +15,4 @@ class Items(models.model):
     def __str__(self):
         return self.title
     def get_absolute_url(self):
-        return reverse("home:products", kwargs={'slug', self.slug})
+        return reverse("apps:products", kwargs={'slug', self.slug})
